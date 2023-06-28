@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #DAF5FF;
+    color: black;
+}
+
+.cabecalho_imagens {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.cabecalho_imagens_logo{
+    width: 10%;
+}
+
+.cabecalho_imagens_banner{
+    justify-content: space-between;
+    width: 50%;
+}
+
+.cabecalho_imagens_icones{
+    width: 25px;
+    gap: 10px;
+}
