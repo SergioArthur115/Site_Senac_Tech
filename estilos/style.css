@@ -15,19 +15,24 @@ body {
 }
 
 .cabecalho_menu_logo {
-    width: 40%;
+    width: 20%;
     justify-self: left;
+}
+.cabecalho_menu_logo_imagem{
+    width: 100%;
 }
 
 .cabecalho_menu_nav {
-    width: 50%;
+    width: 60%;
     justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cabecalho_imagens_icones {
+.cabecalho_menu_imagens_icones{
+    width: 20%;
+    display: flex;
     justify-content: right;
 }
 
