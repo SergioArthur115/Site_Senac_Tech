@@ -230,7 +230,37 @@ body {
     height: 100%;
 }
 
+/*Pagina cursos-------------------------------------------------------------*/
 
 .conteudo_curso{
     width: 100%;
+}
+
+.conteudo_curso_cursos_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_curso_cursos_menu_nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo_curso_cursos_texto{
+    width: 60%;
+    align-items: center;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.conteudo_curso_cursos_imagem{
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
