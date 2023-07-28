@@ -4,67 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>Senac Tech</title>
 </head>
 
 <body>
-    <section>
-        <div>
-            <a href="www.senacrs.com.br"><img src="../images/senac_logo.png" alt="Senac logo" title="Senac Tech Logo"
-                    class="cabecalho_imagens_logo"></a>
-            <img src="../images/senac_banner.jpg" alt="Senac banner" title="Senac Tech Banner"
-                class="cabecalho_imagens_banner">
-            <a href="www.facebook.com.br/senacrs"><img src="../images/icon_facebook.png" alt="Facebook icon"
-                    title="Página do Facebook do Senac" class="cabecalho_imagens_icones"></a>
-            <a href="www.instagram.com.br/senacrs"><img src="../images/icon_instagram.png" alt="Instagram icon"
-                    title="Página do Instagram do Senac" class="cabecalho_imagens_icones"></a>
-            <a href="www.linkedin.com.br/senacrs"><img src="../images/icon_linkedin.png" alt="Linkedin icon"
-                    title="Página do Linkedin do Senac" class="cabecalho_imagens_icones"></a>
-            <a href="www.spotify.com.br/senacrs"><img src="../images/icon_spotify.png" alt="Spotify icon"
-                    title="Página do Spotify do Senac" class="cabecalho_imagens_icones"></a>
-            <a href="www.twitter.com.br/senacrs"><img src="../images/icon_twitter.png" alt="Twitter icon"
-                    title="Página do Twitter do Senac" class="cabecalho_imagens_icones"></a>
-            <a href="www.youtube.com.br/senacrs"><img src="../images/icon_youtube.png" alt="Youtube icon"
-                    title="Página do Youtube do Senac" class="cabecalho_imagens_icones"></a>
-        </div>
-        <div>
-            <nav>
-                <h1 id="s1" align="center">
-                    <a href="../index.html">| Home |</a>
-                    <a href="../paginas/cursos.html">Cursos |</a>
-                    <a href="../paginas/localizacao.html">Localização |</a>
-                    <a href="../paginas/fale_conosco.html">Fale Conosco |</a>
+    <section class="cabecalho">
+        <div class="cabecalho_menu">
+            <div class="cabecalho_menu_logo">
+                <a href="www.senacrs.com.br"><img src="../images/senac_logo.png" alt="Senac logo"
+                        title="Senac Tech Logo" class="cabecalho_menu_logo_imagem"></a>
+            </div>
+            <nav class="cabecalho_menu_nav">
+                <h1 id="s1">
+                    <a href="../index.html">Home</a>
+                    <a href="../paginas/cursos.html">Cursos</a>
+                    <a href="../paginas/localizacao.html">Localização</a>
+                    <a href="../paginas/fale_conosco.html">Fale Conosco</a>
             </nav>
+            <div class="cabecalho_menu_imagens_icones">
+                <a href="www.facebook.com.br/senacrs"><img src="../images/icon_facebook.png" alt="Facebook icon"
+                        title="Página do Facebook do Senac"></a>
+                <a href="www.instagram.com.br/senacrs"><img src="../images/icon_instagram.png" alt="Instagram icon"
+                        title="Página do Instagram do Senac"></a>
+                <a href="www.linkedin.com.br/senacrs"><img src="../images/icon_linkedin.png" alt="Linkedin icon"
+                        title="Página do Linkedin do Senac"></a>
+                <a href="www.spotify.com.br/senacrs"><img src="../images/icon_spotify.png" alt="Spotify icon"
+                        title="Página do Spotify do Senac"></a>
+                <a href="www.twitter.com.br/senacrs"><img src="../images/icon_twitter.png" alt="Twitter icon"
+                        title="Página do Twitter do Senac"></a>
+                <a href="www.youtube.com.br/senacrs"><img src="../images/icon_youtube.png" alt="Youtube icon"
+                        title="Página do Youtube do Senac"></a>
+            </div>
         </div>
+        <div class="cabecalho_banner">
+            <img src="../images/senac_banner4.jfif" alt="Senac banner" title="Senac Tech Banner"
+                class="cabecalho_banner_imagem">
+        </div>
+
     </section>
-    <section>
+    <section class="conteudo_faleConosco">
         <div>
-            <h2 align="center">Fale Conosco</h2>
-            <p align="center">O Senac-RS tem a maior satisfação em atendê-lo.
+            <div class="conteudo_faleConosco_titulo">
+                <h2>Fale Conosco</h2>
+            </div>
+            <p>O Senac-RS tem a maior satisfação em atendê-lo.
                 Importante: preencha corretamente os campos do formulário a seguir, para que possamos lhe dar um
                 retorno.</p>
-            <form action="../index.html" method="post">
-                <table align="center">
+            <form action="../index.html" method="post" class="conteudo_faleConosco_formulario">
+                <table>
                     <thead>
                         <tr>
-                            <td colspan="2" align="center">
+                            <td colspan="2">
                                 <h3>Todos os campos são obrigatórios</h3>
                             </td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Nome Completo:</label></h3>
                             </td>
-                            <td align="left"><input type="text" name="nome" required maxlength="100"></td>
+                            <td><input type="text" name="nome" required maxlength="100"></td>
                         </tr>
 
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Estado:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <select name="estado" required>
                                     <option selected value="">Selecione o Estado (UF)</option>
                                     <option value="Acre">Acre</option>
@@ -98,10 +106,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Cidade:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <select name="cidade" required>
                                     <option selected value="">Selecione a Cidade</option>
                                     <option value="acegua">Aceguá</option>
@@ -752,34 +760,34 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>E-mail:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <input type="email" name="email" required placeholder="nome@dominio.com">
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Confirme o E-mail:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <input type="email" name="email" required placeholder="nome@dominio.com">
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Telefone:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <input type="tel" name="telefone" required size="30">
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Modalidade:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <select name="modalidade" required>
                                     <option selected value="">Selecione a modalidade</option>
                                     <option value="cp">Curso Presencial</option>
@@ -789,10 +797,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Assunto:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <select name="assunto" required>
                                     <option selected value="">Selecione o Assunto</option>
                                     <option value="di">Dúvidas/Informações</option>
@@ -804,25 +812,25 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>Mensagem:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <textarea name="obs" cols="30" rows="4"></textarea>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <h3><label>CPF:</label></h3>
                             </td>
-                            <td align="left">
+                            <td>
                                 <input type="text" name="cpf" required>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="2" align="center"><br>
+                            <td colspan="2"><br>
                                 <input type="submit" value="Cadastrar">
                                 <input type="reset" value="Limpar">
                             </td>

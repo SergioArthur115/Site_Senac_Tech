@@ -264,3 +264,138 @@ body {
     padding-top: 1%;
     padding-bottom: 1%;
 }
+
+/*Pagina localização-------------------------------------------------------------*/
+
+.conteudo_localizacao{
+    display: flex;
+    justify-content: center;
+}
+.conteudo_localizacao_informacoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Pagina fale_conosco-------------------------------------------------------------*/
+
+.conteudo_faleConosco{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo_faleConosco_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.conteudo_faleConosco_formulario{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*Pagina tech_info-------------------------------------------------------------*/
+
+.conteudo_techinfo{
+    width: 100%;
+}
+
+.conteudo_techinfo_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_techinfo_texto{
+    width: 60%;
+    align-items: center;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.conteudo_techinfo_imagem{
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_techinfo_imagem_imagem{
+    width: 60%;
+}
+
+/*Pagina tech_adm-------------------------------------------------------------*/
+
+.conteudo_techadm{
+    width: 100%;
+}
+
+.conteudo_techadm_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_techadm_texto{
+    width: 60%;
+    align-items: center;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.conteudo_techadm_imagem{
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_techadm_imagem_imagem{
+    width: 60%;
+}
+
+/*Pagina tech_dev-------------------------------------------------------------*/
+
+.conteudo_techdev{
+    width: 100%;
+}
+
+.conteudo_techdev_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_techdev_texto{
+    width: 60%;
+    align-items: center;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.conteudo_techdev_imagem{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.conteudo_techdev_imagem_imagem{
+    width: 60%;
+    height: 600px;
+}
