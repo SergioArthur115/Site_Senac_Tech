@@ -448,7 +448,13 @@ body {
 
 /*Pagina Jovem Aprendiz-------------------------------------------------------------*/
 
-.conteudo_JA_info{
+hr{
+	color: blue;
+	background-color: blue;
+	height: 10px;
+}
+
+.conteudo_JA_infos{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -458,8 +464,44 @@ body {
 }
 .conteudo_JA_imagem{
     width: 60%;
-    padding-top: 5%;
-    padding-bottom: 5                    %;
+    text-align: center;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.conteudo_JA_requisitos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 5%;
+}
+
+.conteudo_JA_opor{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.imagem{
+    width: 100%;
+}
+
+.conteudo_JA_sobre{
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+
+.conteudo_JA_sobre_imagem{
+    width: 30%;
+    text-align: center;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
