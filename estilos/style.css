@@ -9,6 +9,8 @@ body {
     color: black;
 }
 
+
+/*Menu-----------------------------------------------------*/
 .cabecalho_menu {
     width: 100%;
     display: flex;
@@ -46,6 +48,88 @@ body {
     height: auto;
 }
 
+.button {
+    background-color: #235d9e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.button:hover {
+    background-color: #154377;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .cabecalho_menu_logo {
+        width: 50%;
+        justify-self: left;
+    }
+
+    .cabecalho_menu {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .cabecalho_menu_nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho_menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 100%;
+    }
+
+    .cabecalho_menu_logo {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+        justify-self: center;
+    }
+
+    .cabecalho_menu_nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cabecalho_menu_imagens_icones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 1%;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+/*Index-----------------------------------------------------*/
 .conteudo {
     width: 100%;
 }
@@ -121,6 +205,7 @@ body {
 .conteudo_depoimentos_depoimentos_texto_1 {
     text-align: justify;
     width: 70%;
+    padding-left: 3%;
 }
 
 .conteudo_depoimentos_depoimentos_imagem_1 {
@@ -131,6 +216,7 @@ body {
 .conteudo_depoimentos_depoimentos_texto_2 {
     text-align: justify;
     width: 70%;
+    padding-right: 2%;
 }
 
 .conteudo_depoimentos_depoimentos_imagem_2 {
@@ -139,6 +225,34 @@ body {
 
 .conteudo_depoimentos_depoimentos_imagem_imagem {
     border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+    .conteudo_depoimentos_depoimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo_depoimentos_depoimentos_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .conteudo_depoimentos_depoimentos_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteudo_noticias {
+        height: auto;
+    }
+
 }
 
 .conteudo_noticias {
@@ -203,26 +317,29 @@ body {
     height: 400px;
 }
 
-.conteudo_noticias_noticias_texto{
+.conteudo_noticias_noticias_texto {
     text-align: justify;
     width: 80%;
 }
 
-.conteudo_noticias_noticias_1_1_imagem{
+.conteudo_noticias_noticias_1_1_imagem {
     width: 80%;
-    height: 205px;
+    height: auto;
 }
-.conteudo_noticias_noticias_1_2_imagem{
+
+.conteudo_noticias_noticias_1_2_imagem {
     width: 80%;
-    height: 205px;
+    height: auto;
 }
-.conteudo_noticias_noticias_2_1_imagem{
+
+.conteudo_noticias_noticias_2_1_imagem {
     width: 80%;
-    height: 205px;
+    height: auto;
 }
-.conteudo_noticias_noticias_2_2_imagem{
+
+.conteudo_noticias_noticias_2_2_imagem {
     width: 80%;
-    height: 205px;
+    height: auto;
 }
 
 .conteudo_noticias_noticias_1_1_imagem_imagem {
@@ -230,13 +347,33 @@ body {
     height: 100%;
 }
 
+
+@media (max-width: 900px) {
+    .conteudo_noticias_noticias_1_1_imagem {
+        height: auto;
+    }
+
+    .conteudo_noticias_noticias_1_2_imagem {
+        height: auto;
+    }
+
+    .conteudo_noticias_noticias_2_1_imagem {
+        height: auto;
+    }
+
+    .conteudo_noticias_noticias_2_2_imagem {
+        height: auto;
+    }
+}
+
+
 /*Pagina cursos-------------------------------------------------------------*/
 
-.conteudo_curso{
+.conteudo_curso {
     width: 100%;
 }
 
-.conteudo_curso_cursos_titulo{
+.conteudo_curso_cursos_titulo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -244,13 +381,13 @@ body {
     padding-bottom: 1%;
 }
 
-.conteudo_curso_cursos_menu_nav{
+.conteudo_curso_cursos_menu_nav {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.conteudo_curso_cursos_texto{
+.conteudo_curso_cursos_texto {
     width: 60%;
     align-items: center;
     text-align: justify;
@@ -258,7 +395,7 @@ body {
     padding-right: 20%;
 }
 
-.conteudo_curso_cursos_imagem{
+.conteudo_curso_cursos_imagem {
     width: 100%;
     text-align: center;
     padding-top: 1%;
@@ -267,32 +404,50 @@ body {
 
 /*Pagina localização-------------------------------------------------------------*/
 
-.conteudo_localizacao{
+.conteudo_localizacao {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
-.conteudo_localizacao_informacoes{
+
+.conteudo_localizacao_informacoes {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+.conteudo_localizacao_informacoes_mapa {
+    width: 500px;
+    height: 500px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 900px) {
+    .conteudo_localizacao_informacoes_mapa {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*Pagina fale_conosco-------------------------------------------------------------*/
 
-.conteudo_faleConosco{
+.conteudo_faleConosco {
     display: flex;
     justify-content: center;
 }
 
-.conteudo_faleConosco_titulo{
+.conteudo_faleConosco_titulo {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.conteudo_faleConosco_formulario{
+
+.conteudo_faleConosco_formulario {
     display: flex;
     justify-content: center;
     padding-top: 1%;
@@ -301,11 +456,11 @@ body {
 
 /*Pagina tech_info-------------------------------------------------------------*/
 
-.conteudo_techinfo{
+.conteudo_techinfo {
     width: 100%;
 }
 
-.conteudo_techinfo_titulo{
+.conteudo_techinfo_titulo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -313,7 +468,7 @@ body {
     padding-bottom: 1%;
 }
 
-.conteudo_techinfo_texto{
+.conteudo_techinfo_texto {
     width: 60%;
     align-items: center;
     text-align: justify;
@@ -321,24 +476,24 @@ body {
     padding-right: 20%;
 }
 
-.conteudo_techinfo_imagem{
+.conteudo_techinfo_imagem {
     width: 100%;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
-.conteudo_techinfo_imagem_imagem{
+.conteudo_techinfo_imagem_imagem {
     width: 60%;
 }
 
 /*Pagina tech_adm-------------------------------------------------------------*/
 
-.conteudo_techadm{
+.conteudo_techadm {
     width: 100%;
 }
 
-.conteudo_techadm_titulo{
+.conteudo_techadm_titulo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -346,7 +501,7 @@ body {
     padding-bottom: 1%;
 }
 
-.conteudo_techadm_texto{
+.conteudo_techadm_texto {
     width: 60%;
     align-items: center;
     text-align: justify;
@@ -354,24 +509,24 @@ body {
     padding-right: 20%;
 }
 
-.conteudo_techadm_imagem{
+.conteudo_techadm_imagem {
     width: 100%;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
-.conteudo_techadm_imagem_imagem{
+.conteudo_techadm_imagem_imagem {
     width: 60%;
 }
 
 /*Pagina tech_dev-------------------------------------------------------------*/
 
-.conteudo_techdev{
+.conteudo_techdev {
     width: 100%;
 }
 
-.conteudo_techdev_titulo{
+.conteudo_techdev_titulo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -379,7 +534,7 @@ body {
     padding-bottom: 1%;
 }
 
-.conteudo_techdev_texto{
+.conteudo_techdev_texto {
     width: 60%;
     align-items: center;
     text-align: justify;
@@ -387,7 +542,7 @@ body {
     padding-right: 20%;
 }
 
-.conteudo_techdev_imagem{
+.conteudo_techdev_imagem {
     width: 100%;
     height: 600px;
     text-align: center;
@@ -395,29 +550,33 @@ body {
     padding-bottom: 1%;
 }
 
-.conteudo_techdev_imagem_imagem{
+.conteudo_techdev_imagem_imagem {
     width: 60%;
-    height: 600px;
+    height: auto;
 }
+
+
 
 /*Pagina RS-TI-------------------------------------------------------------*/
 
-.conteudo_rsti{
+.conteudo_rsti {
     width: 99%;
     padding: 1%;
 }
 
-.conteudo_rsti_titulo{
+.conteudo_rsti_titulo {
     width: 99%;
     padding: 1%;
     text-align: center;
 }
-.conteudo_rsti_subtitulo{
+
+.conteudo_rsti_subtitulo {
     width: 99%;
     padding: 1%;
     text-align: center;
 }
-.conteudo_rsti_video{
+
+.conteudo_rsti_video {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
@@ -425,11 +584,13 @@ body {
     padding-bottom: 1%;
     text-align: center;
 }
-.video{
+
+.video {
     width: 100%;
     height: 600px;
 }
-.conteudo_rsti_texto{
+
+.conteudo_rsti_texto {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
@@ -438,7 +599,7 @@ body {
     text-align: center;
 }
 
-.conteudo_rsti_imagem{
+.conteudo_rsti_imagem {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
@@ -448,13 +609,13 @@ body {
 
 /*Pagina Jovem Aprendiz-------------------------------------------------------------*/
 
-hr{
-	color: blue;
-	background-color: blue;
-	height: 10px;
+hr {
+    color: blue;
+    background-color: blue;
+    height: 10px;
 }
 
-.conteudo_JA_infos{
+.conteudo_JA_infos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -462,7 +623,8 @@ hr{
     text-align: center;
     flex-direction: column;
 }
-.conteudo_JA_imagem{
+
+.conteudo_JA_imagem {
     width: 60%;
     text-align: center;
     padding-left: 20%;
@@ -471,7 +633,7 @@ hr{
     padding-bottom: 2%;
 }
 
-.conteudo_JA_requisitos{
+.conteudo_JA_requisitos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -480,28 +642,38 @@ hr{
     gap: 5%;
 }
 
-.conteudo_JA_opor{
+.conteudo_JA_opor {
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
-.imagem{
+.imagem {
     width: 100%;
 }
 
-.conteudo_JA_sobre{
+.conteudo_JA_sobre {
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
 
 }
 
-.conteudo_JA_sobre_imagem{
+.conteudo_JA_sobre_imagem {
     width: 30%;
     text-align: center;
     padding-left: 35%;
     padding-right: 35%;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+@media (max-width: 900px) {
+    .conteudo_JA_requisitos {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
 }
