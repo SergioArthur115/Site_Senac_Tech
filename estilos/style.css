@@ -56,7 +56,8 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
+    width: 200px;
+    height: 60px;
 }
 
 .button:hover {
@@ -64,7 +65,21 @@ body {
     color: white;
 }
 
-@media (max-width: 900px) {
+.cabecalho_menu_nav_cursos:hover {
+    .cabecalho_menu_nav_subMenu {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+}
+
+.cabecalho_menu_nav_subMenu {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media (max-width: 1350px) {
     .cabecalho_menu_logo {
         width: 50%;
         justify-self: left;
@@ -87,7 +102,7 @@ body {
     }
 
     .button {
-        width: auto;
+        width: 200px;
     }
 }
 
@@ -115,7 +130,7 @@ body {
         padding: 0;
     }
 
-    .cabecalho_menu_imagens_icones{
+    .cabecalho_menu_imagens_icones {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -125,7 +140,7 @@ body {
     }
 
     .button {
-        width: auto;
+        width: 200px;
     }
 }
 
@@ -158,13 +173,13 @@ body {
 }
 
 .conteudo_historia_imagem {
-    width: 20%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: center;
-    padding-left: 40%;
-    padding-right: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
     padding-bottom: 3%;
 }
 
@@ -231,20 +246,27 @@ body {
     .conteudo_depoimentos_depoimentos {
         display: flex;
         flex-direction: column;
+        justify-content: center ;
         align-items: center;
+        width: 100%;
     }
 
     .conteudo_depoimentos_depoimentos_1 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        text-align: center;
         padding-bottom: 5%;
+        width: 50%;
     }
 
     .conteudo_depoimentos_depoimentos_2 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 50%;
     }
 }
 
@@ -257,6 +279,7 @@ body {
 
 .conteudo_noticias {
     width: 100%;
+    height: auto;
 }
 
 .conteudo_noticias_titulo {
@@ -269,12 +292,13 @@ body {
 .conteudo_noticias_noticias {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     gap: 5%;
 }
 
 .conteudo_noticias_noticias_1 {
     width: 50%;
+    height: auto;
     display: flex;
     justify-content: right;
     align-items: end;
@@ -283,6 +307,7 @@ body {
 
 .conteudo_noticias_noticias_2 {
     width: 50%;
+    height: auto;
     display: flex;
     justify-content: left;
     align-items: start;
@@ -350,18 +375,38 @@ body {
 
 @media (max-width: 900px) {
     .conteudo_noticias_noticias_1_1_imagem {
+        padding-top: 10%;
         height: auto;
     }
 
     .conteudo_noticias_noticias_1_2_imagem {
+        padding-top: 10%;
         height: auto;
     }
 
     .conteudo_noticias_noticias_2_1_imagem {
+        padding-top: 10%;
         height: auto;
     }
 
     .conteudo_noticias_noticias_2_2_imagem {
+        padding-top: 10%;
+        height: auto;
+    }
+
+    .conteudo_noticias_noticias_1_1 {
+        height: auto;
+    }
+    
+    .conteudo_noticias_noticias_1_2 {
+        height: auto;
+    }
+    
+    .conteudo_noticias_noticias_2_1 {
+        height: auto;
+    }
+    
+    .conteudo_noticias_noticias_2_2 {
         height: auto;
     }
 }
@@ -400,6 +445,16 @@ body {
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+@media (max-width: 600px) {
+    .conteudo_curso_cursos_menu_nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
 }
 
 /*Pagina localização-------------------------------------------------------------*/
