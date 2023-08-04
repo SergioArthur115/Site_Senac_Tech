@@ -23,6 +23,7 @@ body {
 
 .cabecalho_menu_logo_imagem {
     width: 100%;
+    height: auto;
 }
 
 .cabecalho_menu_nav {
@@ -225,7 +226,7 @@ body {
 
 .conteudo_depoimentos_depoimentos_imagem_1 {
     width: 30%;
-
+    height: auto;
 }
 
 .conteudo_depoimentos_depoimentos_texto_2 {
@@ -236,10 +237,12 @@ body {
 
 .conteudo_depoimentos_depoimentos_imagem_2 {
     width: 30%;
+    height: auto;
 }
 
 .conteudo_depoimentos_depoimentos_imagem_imagem {
     border-radius: 50%;
+    height: auto;
 }
 
 @media (max-width: 1000px) {
@@ -291,10 +294,12 @@ body {
 
     .conteudo_depoimentos_depoimentos_imagem_1 {
         width: auto;
+        height: auto;
     }
 
     .conteudo_depoimentos_depoimentos_imagem_2 {
         width: auto;
+        height: auto;
     }
 }
 
