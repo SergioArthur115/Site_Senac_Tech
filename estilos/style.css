@@ -144,16 +144,17 @@ body {
         width: 200px;
     }
 }
+
 /*Rodapé-----------------------------------------------------*/
 
-.rodape{
+.rodape {
     width: 100%;
     height: 50px;
     margin-top: 5%;
-    background-color:blue;
+    background-color: blue;
 }
 
-.rodapediv{
+.rodapediv {
     width: 100%;
     height: auto;
     padding-top: 25px;
@@ -161,7 +162,7 @@ body {
 
 }
 
-.rodape_texto{
+.rodape_texto {
     text-align: center;
     color: white;
 }
@@ -471,10 +472,12 @@ body {
         height: auto;
         width: 100%;
     }
-    .conteudo_noticias_noticias_1_1_texto{
+
+    .conteudo_noticias_noticias_1_1_texto {
         padding-left: 20%;
     }
-    .conteudo_noticias_noticias_1_2_texto{
+
+    .conteudo_noticias_noticias_1_2_texto {
         padding-left: 20%;
     }
 }
@@ -506,6 +509,11 @@ body {
     text-align: justify;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.conteudo_curso_cursos_texto_titulo{
+    width: 100%;
+    text-align: center;
 }
 
 .conteudo_curso_cursos_imagem {
@@ -573,12 +581,54 @@ body {
 .conteudo_faleConosco_formulario {
     display: flex;
     justify-content: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-top: 1%;
     padding-bottom: 1%;
+
+}
+
+.texto_forms {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.subtitulo_tabela {
+    text-align: center;
+
+}
+
+.tabela_forms {
+    width: 100%;
 }
 
 .botoes_form {
     text-align: center;
+}
+
+input,
+select,
+textarea {
+    width: 80%;
+    border: 2px solid blue;
+    border-radius: 4px;
+    background-color: #9AC5F4;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: #8CABFF;
+}
+
+label {
+    font-family: arial;
+}
+
+.td_forms {
+    text-align: right;
 }
 
 /*Pagina tech_info-------------------------------------------------------------*/
