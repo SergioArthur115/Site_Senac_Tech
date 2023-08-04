@@ -246,7 +246,7 @@ body {
     .conteudo_depoimentos_depoimentos {
         display: flex;
         flex-direction: column;
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
         width: 100%;
     }
@@ -267,6 +267,34 @@ body {
         justify-content: center;
         align-items: center;
         width: 50%;
+    }
+
+    .conteudo_depoimentos_depoimentos_texto_1 {
+        padding: 0;
+    }
+
+    .conteudo_depoimentos_depoimentos_texto_2 {
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo_depoimentos_depoimentos_texto_1 {
+        padding: 0;
+        width: 100%;
+    }
+
+    .conteudo_depoimentos_depoimentos_texto_2 {
+        padding: 0;
+        width: 100%;
+    }
+
+    .conteudo_depoimentos_depoimentos_imagem_1 {
+        width: auto;
+    }
+
+    .conteudo_depoimentos_depoimentos_imagem_2 {
+        width: auto;
     }
 }
 
@@ -377,11 +405,13 @@ body {
     .conteudo_noticias_noticias_1_1_imagem {
         padding-top: 10%;
         height: auto;
+        padding-left: 20%;
     }
 
     .conteudo_noticias_noticias_1_2_imagem {
         padding-top: 10%;
         height: auto;
+        padding-left: 20%;
     }
 
     .conteudo_noticias_noticias_2_1_imagem {
@@ -396,18 +426,30 @@ body {
 
     .conteudo_noticias_noticias_1_1 {
         height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
-    
+
     .conteudo_noticias_noticias_1_2 {
         height: auto;
+        width: 100%;
     }
-    
+
     .conteudo_noticias_noticias_2_1 {
         height: auto;
+        width: 100%;
     }
-    
+
     .conteudo_noticias_noticias_2_2 {
         height: auto;
+        width: 100%;
+    }
+    .conteudo_noticias_noticias_1_1_texto{
+        padding-left: 20%;
+    }
+    .conteudo_noticias_noticias_1_2_texto{
+        padding-left: 20%;
     }
 }
 
@@ -507,6 +549,10 @@ body {
     justify-content: center;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+.botoes_form {
+    text-align: center;
 }
 
 /*Pagina tech_info-------------------------------------------------------------*/
@@ -615,12 +661,12 @@ body {
 /*Pagina RS-TI-------------------------------------------------------------*/
 
 .conteudo_rsti {
-    width: 99%;
+    width: 98%;
     padding: 1%;
 }
 
 .conteudo_rsti_titulo {
-    width: 99%;
+    width: 98%;
     padding: 1%;
     text-align: center;
 }
@@ -633,6 +679,7 @@ body {
 
 .conteudo_rsti_video {
     width: 50%;
+    height: auto;
     padding-left: 25%;
     padding-right: 25%;
     padding-top: 1%;
@@ -642,7 +689,7 @@ body {
 
 .video {
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
 .conteudo_rsti_texto {
@@ -660,6 +707,17 @@ body {
     padding-right: 25%;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+@media (max-width: 600px) {
+
+    .conteudo_rsti_imagem {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
 }
 
 /*Pagina Jovem Aprendiz-------------------------------------------------------------*/
@@ -729,6 +787,34 @@ hr {
         flex-direction: column;
         padding-top: 1%;
         padding-bottom: 1%;
+    }
+
+    .conteudo_JA_sobre {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .conteudo_JA_sobre_imagem {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .conteudo_JA_imagem {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 
 }
