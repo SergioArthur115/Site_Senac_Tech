@@ -58,28 +58,28 @@
             <div class="conteudo_faleConosco_titulo">
                 <h2>Fale Conosco</h2>
             </div>
-            <p>O Senac-RS tem a maior satisfação em atendê-lo.
+            <p class="texto_forms">O Senac-RS tem a maior satisfação em atendê-lo.
                 Importante: preencha corretamente os campos do formulário a seguir, para que possamos lhe dar um
                 retorno.</p>
             <form action="../banco/processaFaleConosco.php" method="post" class="conteudo_faleConosco_formulario">
                 <table>
                     <thead>
                         <tr>
-                            <td colspan="2">
-                                <h3>Todos os campos são obrigatórios</h3>
+                            <td colspan="2" class="td_forms">
+                                <h3 class="subtitulo_tabela">Todos os campos são obrigatórios</h3>
                             </td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Nome Completo:</label></h3>
                             </td>
                             <td><input type="text" name="nome" required maxlength="100"></td>
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Estado:</label></h3>
                             </td>
                             <td>
@@ -116,7 +116,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Cidade:</label></h3>
                             </td>
                             <td>
@@ -770,7 +770,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>E-mail:</label></h3>
                             </td>
                             <td>
@@ -778,7 +778,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Confirme o E-mail:</label></h3>
                             </td>
                             <td>
@@ -786,7 +786,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Telefone:</label></h3>
                             </td>
                             <td>
@@ -794,7 +794,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Modalidade:</label></h3>
                             </td>
                             <td>
@@ -807,7 +807,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Assunto:</label></h3>
                             </td>
                             <td>
@@ -822,7 +822,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>Mensagem:</label></h3>
                             </td>
                             <td>
@@ -830,7 +830,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="td_forms">
                                 <h3><label>CPF:</label></h3>
                             </td>
                             <td>
@@ -842,7 +842,6 @@
                         <tr>
                             <td colspan="2" class="botoes_form"><br>
                                 <input type="submit" value="Cadastrar" class="button">
-                                <input type="reset" value="Limpar" class="button">
                             </td>
                         </tr>
                     </tfoot>
