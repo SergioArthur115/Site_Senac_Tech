@@ -56,12 +56,12 @@
     <section class="conteudo_faleConosco">
         <div>
             <div class="conteudo_faleConosco_titulo">
-                <h2>Fale Conosco</h2>
+                <h2>Cadastre-se</h2>
             </div>
             <p>O Senac-RS tem a maior satisfação em atendê-lo.
                 Importante: preencha corretamente os campos do formulário a seguir, para que possamos lhe dar um
                 retorno.</p>
-            <form action="../banco/processaFaleConosco.php" method="post" class="conteudo_faleConosco_formulario">
+            <form action="../banco/processaCadastro.php" method="post" class="conteudo_faleConosco_formulario">
                 <table>
                     <thead>
                         <tr>
@@ -76,6 +76,14 @@
                                 <h3><label>Nome Completo:</label></h3>
                             </td>
                             <td><input type="text" name="nome" required maxlength="100"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3><label>Telefone:</label></h3>
+                            </td>
+                            <td>
+                                <input type="tel" name="telefone" required size="30">
+                            </td>
                         </tr>
 
                         <tr>
@@ -779,54 +787,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <h3><label>Confirme o E-mail:</label></h3>
+                                <h3><label>Senha:</label></h3>
                             </td>
                             <td>
-                                <input type="email" name="email" required placeholder="nome@dominio.com">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3><label>Telefone:</label></h3>
-                            </td>
-                            <td>
-                                <input type="tel" name="telefone" required size="30">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3><label>Modalidade:</label></h3>
-                            </td>
-                            <td>
-                                <select name="modalidade" required>
-                                    <option selected value="">Selecione a modalidade</option>
-                                    <option value="cp">Curso Presencial</option>
-                                    <option value="ct">Curso Técnico EAD</option>
-
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3><label>Assunto:</label></h3>
-                            </td>
-                            <td>
-                                <select name="assunto" required>
-                                    <option selected value="">Selecione o Assunto</option>
-                                    <option value="di">Dúvidas/Informações</option>
-                                    <option value="soli">Solicitações</option>
-                                    <option value="elo">Elogios</option>
-                                    <option value="suges">Sugestões</option>
-                                    <option value="recla">Reclamações</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3><label>Mensagem:</label></h3>
-                            </td>
-                            <td>
-                                <textarea name="obs" cols="30" rows="4"></textarea>
+                                <input type="password" name="senha" required>
                             </td>
                         </tr>
                         <tr>
