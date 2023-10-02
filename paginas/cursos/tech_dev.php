@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,21 +21,26 @@
                         title="Senac Tech Logo" class="cabecalho_menu_logo_imagem"></a>
             </div>
             <nav class="cabecalho_menu_nav">
-                <a href="../../index.html"><button type="button" class="button">Home</button></a>
+                <a href="../../index.php"><button type="button" class="button">Home</button></a>
                 <div class="cabecalho_menu_nav_cursos">
-                    <a href="../../paginas/cursos.html"><button type="button" class="button">Cursos</button></a>
+                    <a href="../../paginas/cursos.php"><button type="button" class="button">Cursos</button></a>
                     <div class="cabecalho_menu_nav_subMenu">
-                        <a href="../../paginas/cursos/tech_info.html"><button type="button" class="button">Técnico em Informática</button></a>
-                        <a href="../../paginas/cursos/tech_dev.html"><button type="button" class="button">Técnico em Desenvolvimento de Sistemas</button></a>
-                        <a href="../../paginas/cursos/tech_adm.html"><button type="button" class="button">Técnico em Administração</button></a>
-                        <a href="../../paginas/cursos/aprendizagem.html"><button type="button" class="button">Jovem
-                            Aprendiz</button></a>
-                        <a href="../../paginas/cursos/rs_ti.html"><button type="button" class="button">RS TI</button></a>
+                        <a href="../../paginas/cursos/tech_info.php"><button type="button" class="button">Técnico em
+                                Informática</button></a>
+                        <a href="../../paginas/cursos/tech_dev.php"><button type="button" class="button">Técnico em
+                                Desenvolvimento de Sistemas</button></a>
+                        <a href="../../paginas/cursos/tech_adm.php"><button type="button" class="button">Técnico em
+                                Administração</button></a>
+                        <a href="../../paginas/cursos/aprendizagem.php"><button type="button" class="button">Jovem
+                                Aprendiz</button></a>
+                        <a href="../../paginas/cursos/rs_ti.php"><button type="button" class="button">RS
+                                TI</button></a>
                     </div>
                 </div>
-                <a href="../../paginas/localizacao.html"><button type="button" class="button">Localização</button></a>
-                <a href="../../paginas/fale_conosco.html"><button type="button" class="button">Fale Conosco</button></a>
-                <a href="../../paginas/cadastro.html"><button type="button" class="button">Cadastrar</button></a>
+                <a href="../../paginas/localizacao.php"><button type="button" class="button">Localização</button></a>
+                <a href="../../paginas/fale_conosco.php"><button type="button" class="button">Fale Conosco</button></a>
+                <a href="../../paginas/cadastro.php"><button type="button" class="button">Cadastrar</button></a>
+                <a href="../../paginas/login.php"><button type="button" class="button">Login</button></a>
             </nav>
             <div class="cabecalho_menu_imagens_icones">
                 <a href="www.facebook.com.br/senacrs"><img src="../../images/icon_facebook.png" alt="Facebook icon"
@@ -52,8 +61,22 @@
             <img src="../../images/senac_banner4.jfif" alt="Senac banner" title="Senac Tech Banner"
                 class="cabecalho_banner_imagem">
         </div>
-    <hr>
+        <hr>
     </section>
+    <?php
+
+if (isset($_SESSION['session_id'])) {
+    echo 'Bem vindo ' . $_SESSION['session_id'] . ' ao site do Senac Tech <br>';
+    echo "<a href='./index.php?logout'>Logout</a>";
+} else {
+    echo "<a href='../../paginas/login.php'>Acessar Sistema</a>;";
+}
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("Location: ./index.php");
+}
+?>
     <section class="conteudo_techdev">
         <div>
             <div class="conteudo_techdev_titulo">
@@ -62,7 +85,7 @@
             <div class="conteudo_techdev_texto">
                 <p>O desenvolvimento de novas soluções lhe desafia? Você gostaria de trabalhar em uma multinacional? O
                     curso Técnico em Desenvolvimento de Sistemas - Bilíngue pode ser o primeiro passo para você realizar
-                    esses sonhos.<br><br> 
+                    esses sonhos.<br><br>
                     Com ele, você terá a qualificação necessária para atuar na área de desenvolvimento,
                     com um grande diferencial: a habilidade comunicacional em língua inglesa, para falar com um mercado
                     cada dia mais globalizado. A área de desenvolvimento de sistemas emprega milhares de pessoas todos
@@ -93,7 +116,9 @@
         </div>
     </section>
     <footer class="rodape">
-        <div class="rodapediv"><p class="rodape_texto">© Todos Direitos reservados</p></div>
+        <div class="rodapediv">
+            <p class="rodape_texto">© Todos Direitos reservados</p>
+        </div>
     </footer>
 </body>
 

@@ -9,6 +9,7 @@ $cidade = $_POST['cidade'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 $cpf = $_POST['cpf'];
+$criptografia = MD5($senha);
 
 $cliente = new Cliente();
 $cliente->setNome($nome);
@@ -16,7 +17,7 @@ $cliente->setTelefone($telefone);
 $cliente->setEstado($estado);
 $cliente->setCidade($cidade);
 $cliente->setEmail($email);
-$cliente->setSenha($senha);
+$cliente->setSenha($criptografia);
 $cliente->setCPF($cpf);
 
 /*
@@ -36,7 +37,7 @@ if ($conn->query($sql) === true) {
 	echo
 		"<script language='javascript' type='text/javascript'>
 alert('Cadastro realizado com sucesso!');
-window.location.href='../paginas/cadastro.html';</script>";
+window.location.href='../paginas/cadastro.php';</script>";
 	die();
 } else {
 	echo "Erro: " . $sql . "<br>"

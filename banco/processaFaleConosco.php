@@ -43,7 +43,7 @@ if ($conn->query($sql) === true) {
 	echo
 		"<script language='javascript' type='text/javascript'>
 alert('Cadastro realizado com sucesso!');
-window.location.href='../paginas/fale_conosco.html';</script>";
+window.location.href='../paginas/fale_conosco.php';</script>";
 	die();
 } else {
 	echo "Erro: " . $sql . "<br>"
