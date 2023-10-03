@@ -80,7 +80,7 @@ body {
     visibility: hidden;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1550px) {
     .cabecalho_menu_logo {
         width: 50%;
         justify-self: left;

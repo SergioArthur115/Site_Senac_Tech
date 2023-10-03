@@ -67,7 +67,7 @@
 
 if (isset($_SESSION['session_id'])) {
     echo 'Bem vindo ' . $_SESSION['session_id'] . ' ao site do Senac Tech <br>';
-    echo "<a href='./index.php?logout'>Logout</a>";
+    echo "<a href='../../index.php?logout'>Logout</a>";
 } else {
     echo "<a href='../../paginas/login.php'>Acessar Sistema</a>;";
 }
